@@ -27,9 +27,13 @@
 - [BUG] Fix trying to roll back a comitted transaction if an error occured while comitting resulting in an unhandled rejection [3726](https://github.com/sequelize/sequelize/pull/3726)
 - [BUG] Fix regression in beforeUpdate hook where `instance.changed()` would always be false [3727](https://github.com/sequelize/sequelize/pull/3727)
 - [BUG] Fix trying to roll back a comitted transaction if an error occured while comitting
+- [BUG] Fix showIndexQuery so appropriate indexes are returned when a schema is used
+- [BUG] Fix addIndexQuery error when the model has a schema
+- [BUG] Fix API doc generation
 
 #### Backwards compatibility changes
 - Most of the changes in 3.0.0 are BC breaking, read the changelog for 3.0.0 carefully.
+- The error that is thrown when a column is declared to be an enum but without any values used to "Values for ENUM haven't been defined" and is now "Values for ENUM have not been defined".
 
 # 2.1.3
 - [BUG] Fix regression introduced in 2.1.2: updatedAt not set anymore [3667](https://github.com/sequelize/sequelize/pull/3667)
