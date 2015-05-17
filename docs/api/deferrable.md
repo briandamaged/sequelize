@@ -1,6 +1,6 @@
 <a name="deferrable"></a>
 ## `Deferrable()` -> `object`
-[View code](https://github.com/sequelize/sequelize/blob/8cacc120955e369f681e589f78b986bf8dc36463/lib/deferrable.js#L37)
+[View code](https://github.com/sequelize/sequelize/blob/ab9bbec4adaa06c7205240818913d6f2705f2840/lib/deferrable.js#L37)
 A collection of properties related to deferrable constraints. It can be used to
 make foreign key constraints deferrable and to set the constaints within a
 transaction. This is only supported in PostgreSQL.
@@ -34,7 +34,7 @@ sequelize.transaction({
 
 <a name="initially_deferred"></a>
 ## `INITIALLY_DEFERRED()`
-[View code](https://github.com/sequelize/sequelize/blob/8cacc120955e369f681e589f78b986bf8dc36463/lib/deferrable.js#L57)
+[View code](https://github.com/sequelize/sequelize/blob/ab9bbec4adaa06c7205240818913d6f2705f2840/lib/deferrable.js#L57)
 A property that will defer constraints checks to the end of transactions.
 
 
@@ -42,7 +42,7 @@ A property that will defer constraints checks to the end of transactions.
 
 <a name="initially_immediate"></a>
 ## `INITIALLY_IMMEDIATE()`
-[View code](https://github.com/sequelize/sequelize/blob/8cacc120955e369f681e589f78b986bf8dc36463/lib/deferrable.js#L74)
+[View code](https://github.com/sequelize/sequelize/blob/ab9bbec4adaa06c7205240818913d6f2705f2840/lib/deferrable.js#L74)
 A property that will trigger the constraint checks immediately
 
 
@@ -50,7 +50,7 @@ A property that will trigger the constraint checks immediately
 
 <a name="not"></a>
 ## `NOT()`
-[View code](https://github.com/sequelize/sequelize/blob/8cacc120955e369f681e589f78b986bf8dc36463/lib/deferrable.js#L93)
+[View code](https://github.com/sequelize/sequelize/blob/ab9bbec4adaa06c7205240818913d6f2705f2840/lib/deferrable.js#L93)
 A property that will set the constraints to not deferred. This is
 the default in PostgreSQL and it make it impossible to dynamically
 defer the constraints within a transaction.
@@ -60,7 +60,7 @@ defer the constraints within a transaction.
 
 <a name="set_deferred"></a>
 ## `SET_DEFERRED(constraints)`
-[View code](https://github.com/sequelize/sequelize/blob/8cacc120955e369f681e589f78b986bf8dc36463/lib/deferrable.js#L112)
+[View code](https://github.com/sequelize/sequelize/blob/ab9bbec4adaa06c7205240818913d6f2705f2840/lib/deferrable.js#L112)
 A property that will trigger an additional query at the beginning of a
 transaction which sets the constraints to deferred.
 
@@ -76,7 +76,7 @@ transaction which sets the constraints to deferred.
 
 <a name="set_immediate"></a>
 ## `SET_IMMEDIATE(constraints)`
-[View code](https://github.com/sequelize/sequelize/blob/8cacc120955e369f681e589f78b986bf8dc36463/lib/deferrable.js#L133)
+[View code](https://github.com/sequelize/sequelize/blob/ab9bbec4adaa06c7205240818913d6f2705f2840/lib/deferrable.js#L133)
 A property that will trigger an additional query at the beginning of a
 transaction which sets the constraints to immediately.
 
