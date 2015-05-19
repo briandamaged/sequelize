@@ -117,7 +117,7 @@ suite(Support.getTestDialectTeaser('Utils'), function() {
 
 
   suite('stack', function() {
-    test("FAIL", function this_here_test() {
+    test('stack trace starts after call to Util.stack()', function this_here_test() {
 
       function a() {
         return b();
