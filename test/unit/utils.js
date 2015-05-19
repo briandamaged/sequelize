@@ -137,7 +137,7 @@ suite(Support.getTestDialectTeaser('Utils'), function() {
       expect(stack[1].getFunctionName()).to.eql('b');
       expect(stack[2].getFunctionName()).to.eql('a');
       expect(stack[3].getFunctionName()).to.eql('this_here_test');
-    })
-  })
+    });
+  });
 
 });
